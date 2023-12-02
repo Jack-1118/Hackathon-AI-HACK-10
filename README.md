@@ -4,60 +4,51 @@
 
 ## Table of Contents
 
-0. [Disclaimer](#disclaimer)
-1. [Introduction](#Introduction)
-2. [How our AI work](#how-our-ai-work)
-3. [Instruction](#Instruction)
-4. [Beninging](#b)
-5. [QnA](#QnA)
+1. [Project Disclaimer](#project-disclaimer)
+   - [Acknowledgment of External Resources](#acknowledgment-of-external-resources)
+2. [Introduction](#introduction)
+   - [How Our AI Works](#how-our-ai-works)
+3. [Instruction](#instruction)
+4. [Beninging: Embracing the Whimsy of Words](#beninging-embracing-the-whimsy-of-words)
+5. [About Our Contributor](#about-our-contributor)
+6. [QnA](#qna)
 
 - - -
 
-# Disclaimer
-Acknowledgment of External Resources:
 
-We wish to express our gratitude to the contributors and authors of various online resources that have been instrumental in the development of our project. The successful realization of this project was made possible through the utilization of information, guidance, and assistance derived from these sources.
 
-We would like to extend our sincere credits to those individuals and organizations whose prior work has served as a reference and foundation for our project. Their invaluable contributions have significantly influenced and shaped the outcome of our endeavors.
 
-It is important to emphasize that without the aid and insights provided by these external resources, our project would not have reached its current state of completion. We acknowledge and respect the intellectual property rights of the original creators and express our deep appreciation for their work.
+- - -
 
-This disclaimer serves as a formal recognition of the collaborative nature of our project and a sincere expression of thanks to those who have played a pivotal role in its development.
+# Project Disclaimer
+
+## Acknowledgment of External Resources
+
+We express gratitude to contributors and authors of online resources pivotal in our project's development. The success of this project is indebted to the information, guidance, and assistance derived from these sources.
 
 # Introduction
-Our project has been conceived in response to the challenges posed by conventional websites, recognizing the inconveniences experienced by users. In addressing these issues, we have endeavored to create a solution by developing this website. It is important to note that our project's realization has been made possible through collaborative efforts, drawing insights and support from various AI applications.
 
-This initiative aims not only to enhance user experience but also to contribute to the ongoing improvement of online platforms. We acknowledge the influence and assistance received from other AI applications, which have played a significant role in shaping and guiding our project.
+Our project addresses challenges in conventional websites, aiming to enhance user experience. Collaboration and insights from various AI applications have been instrumental in its realization.
 
-This introduction serves to convey our commitment to addressing user concerns and our gratitude for the contributions of other AI applications that have been instrumental in the development of this innovative solution.
+Learn more about our design in the [wireframe document](.media/Bertravelling%20AI.pdf).
 
-# How our AI work
-Our AI operates through a comprehensive training process involving datasets associated with global travel. The data utilized in our training regimen is predominantly sourced from reputable online platforms, supplemented by insights from other AI systems. This collaborative approach ensures a diverse and robust foundation for our AI.
 
-In essence, our AI processes the provided data, leveraging its training to generate outputs tailored to meet user requirements. The synthesis of information from internet sources and contributions from other AI entities enhances the adaptability and proficiency of our system, enabling it to deliver responses that align closely with user expectations.
+### How our AI Works
 
-This methodology underscores our commitment to harnessing the collective intelligence available, resulting in an AI that is well-equipped to fulfill diverse user needs within the realm of global travel.
+Our AI, trained on global travel datasets, processes information from online platforms and other AI systems. This collaborative approach ensures adaptability and proficiency.
 
 # Instruction
-<div style="text-align:center">
-  <img src=".media/Dependency_install.png" alt="Dependency Install" />
-</div>
-1. Run both of this function and you are all set
-
+![Dependency Install](.media/Dependency_install.png)
+1. Run both functions to set up the project.
 
 # Beninging: Embracing the Whimsy of Words
 
-Imagine a linguistic wonderland where "beginning" takes a playful detour, and the ordinary transforms into the extraordinary. Welcome to the world of **Beninging**—a delightful phenomenon that occurs when spellcheck sips coffee, and autocorrect embarks on its own creative journey.
+Welcome to the world of **Beninging**—where "beginning" takes a playful detour into linguistic wonder. It captures the whimsical spirit of wordplay, turning typos into a dance of vowels and consonants.
 
-## The Essence of Beninging
+Join the journey and embrace the magic of Beninging, where language itself becomes a canvas for playful expression.
 
-_Beninging_ captures the whimsical spirit of wordplay, turning typos into a dance of vowels and consonants. It's not just a mistake; it's a linguistic adventure into uncharted territories where language itself becomes a canvas for playful expression.
+![Beninging Illustration](.media/beninging_illustration.jpg)
 
-So, join the journey and embrace the magic of Beninging, where every twist and turn brings a smile and proves that even in the realm of typos, humor can be found.
-
-<div style="text-align:center">
-  <img src=".media/beninging_illustration.jpg" alt="Beninging Illustration" />
-</div>
 
 # About Our Contributor
 <br>
