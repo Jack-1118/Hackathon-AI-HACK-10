@@ -1,4 +1,4 @@
-# Hackathon-AI-HACK-10
+# Bertravelling AI
 
 - - -
 
