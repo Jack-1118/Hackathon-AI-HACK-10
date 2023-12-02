@@ -17,9 +17,6 @@
 
 
 
-
-- - -
-
 # Project Disclaimer
 
 ## Acknowledgment of External Resources
@@ -27,6 +24,9 @@
 We express gratitude to contributors and authors of online resources pivotal in our project's development. The success of this project is indebted to the information, guidance, and assistance derived from these sources.
 
 # Introduction
+![bertravelling Logo](.media/bertravelling_logo.jpg)
+
+"Bertravelling AI: Navigating Words, Unleashing Worlds."
 
 Our project addresses challenges in conventional websites, aiming to enhance user experience. Collaboration and insights from various AI applications have been instrumental in its realization.
 
@@ -51,12 +51,11 @@ Join the journey and embrace the magic of Beninging, where language itself becom
 
 
 # About Our Contributor
-<br>
-Jack
+I'm LIM GEN JACK one of the contributor of Beninging. For an in-depth look at my skills and contributions, you're welcome to explore my [GitHub Profile](https://github.com/Jack-1118), where I showcase a collection of open-source projects and notable contributions.
 
 I'm CHONG KELVIN one of the contributor of Beninging. Feel free to visit my [GitHub Profile](https://github.com/kelocker), where I host various open-source projects and contributions.
 
 
-I'm Chua Kian Ho, one of the contributor of Beninging. Free free to visit my [Github Profile](https://github.com/kelocker), this will be where I host most of my open-source projects and contributions.
+I'm CHUA KIAN HO, one of the contributor of Beninging. Free free to visit my [Github Profile](https://github.com/awawot), this will be where I host most of my open-source projects and contributions.
 
 # QnA
