@@ -8,7 +8,7 @@
 1. [Introduction](#Introduction)
 2. [How our AI work](#how-our-ai-work)
 3. [Instruction](#Instruction)
-4. [About Our Team](#About-Our-Team)
+4. [Beninging](#b)
 5. [QnA](#QnA)
 
 - - -
@@ -39,14 +39,27 @@ In essence, our AI processes the provided data, leveraging its training to gener
 This methodology underscores our commitment to harnessing the collective intelligence available, resulting in an AI that is well-equipped to fulfill diverse user needs within the realm of global travel.
 
 # Instruction
-![Dependency_install.png](.media/Dependency_install.png)
+<div style="text-align:center">
+  <img src=".media/Dependency_install.png" alt="Dependency Install" />
+</div>
 1. Run both of this function and you are all set
 
-# About-Our-Team
-<stronf>Beninging</strong><br>
-Beninging (noun): A delightful linguistic twist that happens when the word "beginning" takes a playful detour in the realm of memes. It's that magical moment when spellcheck takes a coffee break, and autocorrect decides to embark on its own creative journey. Beninging captures the essence of whimsical wordplay, proving that even typos can have a sense of humor. It's not just a mistake; it's a linguistic adventure into uncharted territories where vowels and consonants dance to the beat of their own typos.
 
-<strong>Contributor</strong>
+# Beninging: Embracing the Whimsy of Words
+
+Imagine a linguistic wonderland where "beginning" takes a playful detour, and the ordinary transforms into the extraordinary. Welcome to the world of **Beninging**—a delightful phenomenon that occurs when spellcheck sips coffee, and autocorrect embarks on its own creative journey.
+
+## The Essence of Beninging
+
+_Beninging_ captures the whimsical spirit of wordplay, turning typos into a dance of vowels and consonants. It's not just a mistake; it's a linguistic adventure into uncharted territories where language itself becomes a canvas for playful expression.
+
+So, join the journey and embrace the magic of Beninging, where every twist and turn brings a smile and proves that even in the realm of typos, humor can be found.
+
+<div style="text-align:center">
+  <img src=".media/beninging_illustration.jpg" alt="Beninging Illustration" />
+</div>
+
+# About Our Contributor
 <br>
 Jack
 
