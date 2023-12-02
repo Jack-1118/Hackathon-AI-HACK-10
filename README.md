@@ -51,10 +51,9 @@ Join the journey and embrace the magic of Beninging, where language itself becom
 
 
 # About Our Contributor
-I'm LIM GEN JACK one of the contributor of Beninging. For an in-depth look at my skills and contributions, you're welcome to explore my [GitHub Profile](https://github.com/Jack-1118), where I showcase a collection of open-source projects and notable contributions.
+I'm LIM GEN JACK one of the contributors of Beninging. For an in-depth look at my skills and contributions, you're welcome to explore my [GitHub Profile](https://github.com/Jack-1118), where I showcase a collection of open-source projects and notable contributions.
 
-I'm CHONG KELVIN one of the contributor of Beninging. Feel free to visit my [GitHub Profile](https://github.com/kelocker), where I host various open-source projects and contributions.
-
+Hello there! I'm CHONG KELVIN, one of the contributors of Beninging. Feel free to explore my [GitHub Profile](https://github.com/kelocker), where I host a variety of open-source projects and contributions. Whether you're interested in exploring innovative projects or seeking assistance with coding challenges, my GitHub repository is a hub for creativity and collaboration. Join me on this exciting journey of development and discovery!
 
 I'm CHUA KIAN HO, one of the contributor of Beninging. Free free to visit my [Github Profile](https://github.com/awawot), this will be where I host most of my open-source projects and contributions.
 
