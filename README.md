@@ -39,7 +39,10 @@ Our AI, trained on global travel datasets, processes information from online pla
 
 # Instruction
 ![Dependency Install](.media/Dependency_install.png)
-1. Run both functions to set up the project.
+1. Run all dependencies
+![Module Install](.media/module_install.png)
+2. Run all modules
+3. You are all set
 
 # Beninging: Embracing the Whimsy of Words
 
