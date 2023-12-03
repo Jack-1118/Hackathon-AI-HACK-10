@@ -38,21 +38,19 @@ Learn more about our design in the [wireframe document](.media/Bertravelling%20A
 Our AI, trained on global travel datasets, processes information from online platforms and other AI systems. This collaborative approach ensures adaptability and proficiency.
 
 # Instruction
-<div style="text-align: center;">
-  <img src=".media/Dependency_install.png" alt="Dependency Install" />
-</div>
+
+![Dependency Install](.media/Dependency_install.png)
 
 <br>
 1. Run all dependencies
 
-<div style="text-align: center;">
-  <img src=".media/module_install.png" alt="Module Install" />
-</div>
+
+![Module Install](.media/module_install.png)
 
 <br>
-2. Run all modules
-
+2. Run all modules<br>
 3. You are all set
+
 
 # Beninging: Embracing the Whimsy of Words
 
