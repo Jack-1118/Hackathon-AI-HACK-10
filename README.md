@@ -49,7 +49,12 @@ Our AI, trained on global travel datasets, processes information from online pla
 
 <br>
 2. Run all modules<br>
-3. You are all set
+
+![API Token](.media/API_token.png)
+
+<br>
+3. Buy token from [OpenAI](https://platform.openai.com/signup) and insert into the str
+4. You are all set
 
 
 # Beninging: Embracing the Whimsy of Words
