@@ -43,7 +43,7 @@ Our AI, trained on global travel datasets, processes information from online pla
 
 <br>
 1. Run all dependencies
-
+<br>
 
 ![Module Install](.media/module_install.png)
 
