@@ -53,7 +53,7 @@ Our AI, trained on global travel datasets, processes information from online pla
 ![API Token](.media/API_token.png)
 
 <br>
-3. Buy token from [OpenAI](https://platform.openai.com/signup) and insert into the str
+3. Buy token from [OpenAI](https://platform.openai.com/signup) and insert into the str <br>
 4. You are all set
 
 
