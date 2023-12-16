@@ -52,6 +52,21 @@
             window.location.href = 'intinery.html';
         }, 3000);
     }
+
+
+        function checkStatus() {
+            fetch('/get-data')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'done') {
+                        window.location.href = '/itinerary';
+                    } else {
+                        setTimeout(checkStatus, 1000);  // Check again in 1 second
+                    }
+                });
+        }
+        checkStatus();  // Start checking
+
 </script>
 
 </body>

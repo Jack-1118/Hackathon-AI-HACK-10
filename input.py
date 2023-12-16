@@ -3,7 +3,7 @@ import re
 import json
 
 # Initializing GPT Api
-api_key = "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"
+api_key = "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"
 client = OpenAI(api_key=api_key)
 
 
@@ -12,7 +12,7 @@ def answer(question):
 
     prompt = [{"role": "system", "content": "WanderBot is an advanced trip planner AI designed to crafting seamless itineraries."}, {"role": "user", "content": question}]
     response = client.chat.completions.create(
-        model='ft:gpt-3.5-turbo-0613:personal::8W7o9qVr',
+        model='ft:gpt-3.5-turbo-0613:personal::8WQpDXeX',
         messages=prompt 
         )
     
