@@ -3,7 +3,7 @@ import re
 import json
 
 # Initializing GPT Api
-api_key = "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"
+api_key = "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"
 client = OpenAI(api_key=api_key)
 
 
