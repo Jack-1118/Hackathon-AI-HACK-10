@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Result</h2>
+
+<script>
+    fetch('/get-data')
+        .then(response => response.json())
+        .then(allList => {
+            var table = document.createElement('table');
+
+            // Iterate over each day in allList
+            for (var day in allList) {
+                // Create a row for the day
+                var dayRow = document.createElement('tr');
+                dayRow.innerHTML = '<td colspan="4">' + day + '</td>';
+                table.appendChild(dayRow);
+
+                // Iterate over each event in the day
+                allList[day].forEach(function(event) {
+                    var row = document.createElement('tr');
+                    row.innerHTML = '<td>' + event[0] + '</td>' +
+                                    '<td>' + event[1] + '</td>' +
+                                    '<td>' + event[2] + '</td>' +
+                                    '<td><a href="' + event[3] + '">Link</a></td>';
+                    table.appendChild(row);
+                });
+            }
+
+            document.body.appendChild(table);
+        });
+</script>
+
+</body>
+</html>
