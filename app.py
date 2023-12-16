@@ -17,8 +17,12 @@ def sum():
     state = request.form['state']
     day = request.form['days']
     # Start a new thread for insert_ai function
-    insert_ai(country, state, day)
-    return render_template('itinerary.html')
+    try:
+        insert_ai(country, state, day)
+        return render_template('itinerary.html')
+    except Exception as e:
+        return sum()
+
 
 
 
