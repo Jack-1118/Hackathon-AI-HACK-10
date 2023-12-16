@@ -1,38 +1,131 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #333;
+        }
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            margin: 20px 0;
+            color: #3498db;
+        }
+        table {
+            width: 80%;
+            max-width: 1000px; /* Set a max-width for larger screens */
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+        }
+        th, td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #eee;
+        }
+        tr.day-row td {
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+        }
+        td a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        td a:hover {
+            text-decoration: underline;
+        }
+        .button-container {
+            text-align: center;
+            width: 100%;
+            margin: 30px 0;
+        }
+        .home-button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .home-button:hover {
+            background-color: #555;
+        }
+        @media (max-width: 600px) {
+            table {
+                width: 95%;
+            }
+            h2 {
+                margin-top: 10px;
+            }
+        }
+    </style>
+    <link rel='stylesheet' href='style.css'>
+</head>
 <body>
+    <header>
+        <img src="images/bertravelling_logo.jpg" alt="Bertravelling Logo" class="logo">
+        <h1>Bertravelling <span>AI</span></h1>
+    </header>
 
-<h2>Result</h2>
+<h2>Trip Planning</h2>
 
 <script>
-    let jsonString = '{"Day 1": [["Breakfast", "Antipodean Café", "A cozy spot for a hearty breakfast and great coffee", "https://maps.app.goo.gl/Antipodean_Cafe"], ["Attraction", "Petronas Twin Towers", "Iconic twin skyscrapers and a symbol of Kuala Lumpur", "https://maps.app.goo.gl/Petronas_Twin_Towers"], ["Lunch", "Jalan Alor Street Food", "Bustling street lined with local food stalls", "https://maps.app.goo.gl/Jalan_Alor_Street_Food"], ["Attraction", "KL Tower", "Offering panoramic views of the city", "https://maps.app.goo.gl/KL_Tower"], ["Dinner", "Fuego at Troika Sky Dining", "Contemporary South American cuisine with city views", "https://maps.app.goo.gl/Fuego_at_Troika_Sky_Dining"], ["Supper", "Mamak Jalan Alor", "Late-night spot for classic Malaysian street food", "https://maps.app.goo.gl/Mamak_Jalan_Alor"]], "Day 2": [["Breakfast", "VCR Café", "Known for its specialty coffee and homemade cakes", "https://maps.app.goo.gl/VCR_Cafe"], ["Attraction", "Islamic Arts Museum Malaysia", "Exhibits art and artifacts from the Islamic world", "https://maps.app.goo.gl/Islamic_Arts_Museum_Malaysia"], ["Lunch", "Central Market Kuala Lumpur", "A cultural landmark with shops and street food", "https://maps.app.goo.gl/Central_Market_Kuala_Lumpur"], ["Attraction", "Sultan Abdul Samad Building", "A historic building showcasing colonial architecture", "https://maps.app.goo.gl/Sultan_Abdul_Samad_Building"], ["Dinner", "Nobu Kuala Lumpur", "High-end Japanese-Peruvian fusion cuisine", "https://maps.app.goo.gl/Nobu_Kuala_Lumpur"], ["Supper", "Restoran Wong Ah Wah", "Famous for its grilled chicken wings and seafood", "https://maps.app.goo.gl/Restoran_Wong_Ah_Wah"]]}';
-
-    let allList = JSON.parse(jsonString);
+    fetch('/data')
+        .then(response => response.json())
+        .then(allList => {
     var table = document.createElement('table');
 
+    // Create table header
+    var header = table.insertRow();
+    header.innerHTML = '<th>Time of Day</th><th>Location</th><th>Description</th><th>Link</th>';
 
+    // Iterate over each day in allList
+    for (var day in allList) {
+        // Create a row for the day
+        var dayRow = document.createElement('tr');
+        dayRow.classList.add('day-row');
+        dayRow.innerHTML = '<td colspan="4">' + day + '</td>';
+        table.appendChild(dayRow);
 
-            // Iterate over each day in allList
-            for (var day in allList) {
-                // Create a row for the day
-                var dayRow = document.createElement('tr');
-                dayRow.innerHTML = '<td colspan="4">' + day + '</td>';
-                table.appendChild(dayRow);
+        // Iterate over each event in the day
+        allList[day].forEach(function(event) {
+            var row = document.createElement('tr');
+            row.innerHTML = '<td>' + event[0] + '</td>' +
+                            '<td>' + event[1] + '</td>' +
+                            '<td>' + event[2] + '</td>' +
+                            '<td><a href="' + event[3] + '" target="_blank">Link</a></td>';
+            table.appendChild(row);
+        });
+    }
 
-                // Iterate over each event in the day
-                allList[day].forEach(function(event) {
-                    var row = document.createElement('tr');
-                    row.innerHTML = '<td>' + event[0] + '</td>' +
-                                    '<td>' + event[1] + '</td>' +
-                                    '<td>' + event[2] + '</td>' +
-                                    '<td><a href="' + event[3] + '">Link</a></td>';
-                    table.appendChild(row);
-                });
-            }
+    document.body.appendChild(table);
 
-            document.body.appendChild(table);
-        
+    // Add a button to go back to the home page
+    var buttonContainer = document.createElement('div');
+    buttonContainer.className = 'button-container';
+    var homeButton = document.createElement('a');
+    homeButton.className = 'home-button';
+    homeButton.href = 'index.html'; // Replace with the actual URL of your home page
+    homeButton.textContent = 'Back to Home';
+    buttonContainer.appendChild(homeButton);
+    document.body.appendChild(buttonContainer);
+
+});
 </script>
-
 </body>
 </html>

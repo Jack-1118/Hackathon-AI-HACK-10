@@ -1,36 +1,123 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #333;
+        }
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            margin: 20px 0;
+            color: #3498db;
+        }
+        table {
+            width: 80%;
+            max-width: 1000px; /* Set a max-width for larger screens */
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+        }
+        th, td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #eee;
+        }
+        tr.day-row td {
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+        }
+        td a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        td a:hover {
+            text-decoration: underline;
+        }
+        .button-container {
+            text-align: center;
+            width: 100%;
+            margin: 30px 0;
+        }
+        .home-button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .home-button:hover {
+            background-color: #555;
+        }
+        @media (max-width: 600px) {
+            table {
+                width: 95%;
+            }
+            h2 {
+                margin-top: 10px;
+            }
+        }
+    </style>
+    <link rel='stylesheet' href='style.css'>
+</head>
 <body>
+    <header>
+        <img src="images/bertravelling_logo.jpg" alt="Bertravelling Logo" class="logo">
+        <h1>Bertravelling <span>AI</span></h1>
+    </header>
 
-<h2>Result</h2>
+<h2>Trip Planning</h2>
 
 <script>
     fetch('/data')
         .then(response => response.json())
         .then(allList => {
-            var table = document.createElement('table');
+    var table = document.createElement('table');
 
-            // Iterate over each day in allList
-            for (var day in allList) {
-                // Create a row for the day
-                var dayRow = document.createElement('tr');
-                dayRow.innerHTML = '<td colspan="4">' + day + '</td>';
-                table.appendChild(dayRow);
+    // Create table header
+    var header = table.insertRow();
+    header.innerHTML = '<th>Time of Day</th><th>Location</th><th>Description</th><th>Link</th>';
 
-                // Iterate over each event in the day
-                allList[day].forEach(function(event) {
-                    var row = document.createElement('tr');
-                    row.innerHTML = '<td>' + event[0] + '</td>' +
-                                    '<td>' + event[1] + '</td>' +
-                                    '<td>' + event[2] + '</td>' +
-                                    '<td><a href="' + event[3] + '">Link</a></td>';
-                    table.appendChild(row);
-                });
-            }
+    // Iterate over each day in allList
+    for (var day in allList) {
+        // Create a row for the day
+        var dayRow = document.createElement('tr');
+        dayRow.classList.add('day-row');
+        dayRow.innerHTML = '<td colspan="4">' + day + '</td>';
+        table.appendChild(dayRow);
 
-            document.body.appendChild(table);
+        // Iterate over each event in the day
+        allList[day].forEach(function(event) {
+            var row = document.createElement('tr');
+            row.innerHTML = '<td>' + event[0] + '</td>' +
+                            '<td>' + event[1] + '</td>' +
+                            '<td>' + event[2] + '</td>' +
+                            '<td><a href="' + event[3] + '" target="_blank">Link</a></td>';
+            table.appendChild(row);
         });
-</script>
+    }
 
+    document.body.appendChild(table);
+});
+
+
+
+</script>
 </body>
 </html>
