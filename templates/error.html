@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Website Example</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #f7f7f7;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 24px;
+        }
+
+        button {
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #008CBA;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #005f73;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+    </style>
+    <script>
+        function showError() {
+            alert('Our AI has encounterd an error. Please try again later.');
+        }
+
+        function redirectToWebsite() {
+            window.location.href = 'creatingTrip.html';
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Oh no, an error has occured!</h1>
+    <button onclick="showError()">Click to see error details.</button>
+    <button onclick="redirectToWebsite()">Back to Creating Trip</button>
+</div>
+
+<footer>
+    <p>&copy; 2023 The Beninging</p>
+</footer>
+
+</body>
+</html>
